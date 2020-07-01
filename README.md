@@ -1,6 +1,6 @@
 # Network Note
 
-A non-linear cross-platform note-taking app.
+A non-linear cross-platform personal note-taking app.
 
 ## Dependency
 1. Sembast for NoSQL.
