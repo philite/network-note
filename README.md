@@ -12,8 +12,9 @@ A non-linear cross-platform personal note-taking app.
 1. Store notes data as JSON.
 2. Each note can link to another notes as many as possible.
 3. When viewing a note, each click on a linked note put the clicked note to below the former note. (Like Tiddlywiki)
-4. Markdown syntax support.
-5. Can save to GDrive and Dropbox.
+4. When viewing linked notes, AppBar acts as network note navigator (Has name and arrow for navigation)
+5. Markdown syntax support.
+6. Can save to GDrive and Dropbox.
 
 ### Minimum Viable Product Stages
 1. CRUD for notes

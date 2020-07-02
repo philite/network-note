@@ -23,7 +23,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  sembast: ^2.4.5
+  path_provider: ^1.6.11
 
+  tekartik_common_utils:
+    git:
+      url: git://github.com/tekartik/common_utils.dart
+      ref: dart2
+  
+  tekartik_app_flutter_sembast:
+    git:
+      url: git://github.com/tekartik/app_flutter_utils.dart
+      path: app_sembast
+      ref: dart2
+      version: '>=0.3.0'
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
