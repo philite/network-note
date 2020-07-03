@@ -5,6 +5,12 @@ import 'package:network_note/screens/home_screen.dart';
 import 'package:tekartik_app_flutter_sembast/sembast.dart';
 
 // TODO() => Make this project TDD;
+// TODO() => Localization
+// TODO() => Consistent dimension resource
+
+// TODO() => Theme (later)
+// TODO() => Interface design (later)
+// TODO() => Reusable widget (later)
 
 ApplicationDatabase appDatabase;
 NoteContentRepository noteContentRepo;

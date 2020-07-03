@@ -86,13 +86,13 @@ class _NoteEditorState extends State<NoteEditor> {
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
                 actions: <Widget>[
-                  FlatButton(
+                  RaisedButton(
                     child: Text("Don't save and exit"),
                     // Navigator.of(context).pop(result)
                     // return true;
                     onPressed: () => Navigator.pop(context, true),
                   ),
-                  FlatButton(
+                  RaisedButton(
                     child: Text("Save and exit"),
                     onPressed: () async {
                       await _saveNote();
@@ -102,6 +102,8 @@ class _NoteEditorState extends State<NoteEditor> {
                   FlatButton(
                     child: Text("Cancel"),
                     // return false;
+                    // TODO() => Current: Click cancel = Close the note
+                    // Expect: Click cancel = Close dialog and stay on this note
                     onPressed: () => Navigator.pop(context, false),
                   ),
                 ],
@@ -155,7 +157,8 @@ class _NoteEditorState extends State<NoteEditor> {
         // (Duplicate note found after press save and exit with saving)
 
         // TODO() => Bug: After saved and press exit immediately after, it still asks to save change
-        onPressed: () async => _saveNote(),
+        onPressed: () async =>
+            await _saveNote(), // Does this await unnesscary because there's no next command to execute?
       )
     ];
   }

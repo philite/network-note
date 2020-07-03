@@ -29,7 +29,7 @@ class _NoteViewerState extends State<NoteViewer> {
                     icon: Icon(Icons.edit),
                     onPressed: () {
                       _onPressEditNote();
-                    })
+                    }),
             ],
           ),
           body: _buildNoteContainer(),
@@ -40,11 +40,11 @@ class _NoteViewerState extends State<NoteViewer> {
 
   void _onPressEditNote() {
     if (_note != null) {
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-        return NoteEditor(
-          initialNote: _note,
-        );
-      }));
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => NoteEditor(initialNote: _note),
+        ),
+      );
     }
   }
 
